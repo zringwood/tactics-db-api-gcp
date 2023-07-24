@@ -48,7 +48,7 @@ app.get("/middlegames/:id", (req, res) => {
     })
 })
 
-app.listen($PORT, () => {
-    console.log(`Server Listening on port ${$PORT}!`)
+app.listen(8080, () => {
+    console.log(`Server Listening on port ${8080}!`)
 })
 
