@@ -4,7 +4,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const  corsOptions = { origin: 'http://localhost:3000'}
+const  corsOptions = { origin: 'https://tactics-db-wqrtz47qla-uc.a.run.app'}
 app.use(cors(corsOptions))
 // Import the Google Cloud client library
 const { BigQuery } = require('@google-cloud/bigquery');
