@@ -4,7 +4,7 @@ const { BigQuery } = require('@google-cloud/bigquery');
 const bigqueryClient = new BigQuery();
 
 //Serve an endgame puzzle with a given difficulty
-router.get("/endgames/:difficulty/:id", (req, res) => {
+router.get("/:difficulty/:id", (req, res) => {
     const difficulty = req.params.difficulty;
     const sqlQuery = `SELECT *
     FROM \`tacticsdb-393323.puzzles.endgames_${difficulty}\`
