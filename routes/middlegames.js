@@ -7,7 +7,7 @@ const bigqueryClient = new BigQuery();
 app.get("/middlegames/:difficulty/:id", (req, res) => {
     const difficulty = req.params.difficulty;
     const sqlQuery = `SELECT *
-    FROM \`tacticsdb-393323.puzzles.middlegames.${difficulty}\`
+    FROM \`tacticsdb-393323.puzzles.middlegames_${difficulty}\`
     WHERE id = ${Number(req.params.id)}`;
     const options = {
         query: sqlQuery,
