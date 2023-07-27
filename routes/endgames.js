@@ -1,5 +1,4 @@
 const express = require('express')
-const knex = require("knex")(require("../knexfile"));
 const router = express.Router();
 
 //Serves an endgame puzzle with a given id
