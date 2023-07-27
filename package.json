@@ -4,6 +4,7 @@
     "reset-db": "npx knex migrate:down & npx knex migrate:up & npx knex seed:run"
   },
   "dependencies": {
+    "@google-cloud/bigquery": "^6.2.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express.js": "^1.0.0",
