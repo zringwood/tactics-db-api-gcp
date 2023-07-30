@@ -5,7 +5,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const  corsOptions = { origin: 'https://tactics.zacharyringwood.com'}
-app.use(cors(corsOptions))
+app.use(cors())
 const sanitzer = require("perfect-express-sanitizer")
 app.use(sanitzer.clean({
     sql:true
